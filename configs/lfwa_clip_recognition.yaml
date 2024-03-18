@@ -1,0 +1,27 @@
+image_root: '/home/ubuntu/lxd-workplace/LYT/FFLIP/LFWA/lfw'
+csv_root: '/home/ubuntu/lxd-workplace/LYT/FFLIP/LFWA'
+dataset: 'lfwa'
+
+# pretrained: '/home/guest/workplace/jmm/fflip/new/itc_itm_mm/output/pretrain-base/checkpoint_best.pth'
+pretrained: ''
+
+intermediate_hidden_state: True
+
+# size of vit model; base or large
+vit: 'base'
+vit_grad_ckpt: False
+vit_ckpt_layer: 0
+
+num_classes: 40
+
+image_size: 224
+batch_size_train: 64
+batch_size_test: 64
+
+# optimizer
+weight_decay: 0.05
+init_lr: 3e-3
+min_lr: 0
+lr_decay_rate: 0.9
+max_epoch: 100
+warmup_steps: 2000

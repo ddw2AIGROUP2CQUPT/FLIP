@@ -1,0 +1,25 @@
+image_root: '/home/ubuntu/lxd-workplace/LYT/FFLIP/CelebA/images/CelebA'
+csv_root: '/home/ubuntu/lxd-workplace/LYT/FFLIP/CelebA'
+dataset: 'celeba'
+
+pretrained: '/home/ubuntu/lxd-workplace/LYT/FFLIP/itc_itm_mm/outputs/pretrain-base/checkpoint_best.pth'
+intermediate_hidden_state: True
+
+# size of vit model; base or large
+vit: 'base'
+vit_grad_ckpt: False
+vit_ckpt_layer: 0
+
+num_classes: 40
+
+image_size: 224
+batch_size_train: 64
+batch_size_test: 64
+    
+# optimizer
+weight_decay: 0.05
+init_lr: 0.3
+min_lr: 0
+lr_decay_rate: 0.9
+max_epoch: 100
+warmup_steps: 2000

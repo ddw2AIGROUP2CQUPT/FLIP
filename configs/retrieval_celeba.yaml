@@ -1,0 +1,39 @@
+image_root: '/home/ubuntu/lxd-workplace/LYT/BLIP-Retrieval/COMBINE/images'
+ann_root: '/home/ubuntu/lxd-workplace/LYT/BLIP-Retrieval/COMBINE/annotation'
+dataset: 'celeba'
+
+# set pretrained as a file path or an url
+# coco
+# pretrained: '/home/ubuntu/lxd-workplace/LYT/BLIP/simplify/output/retrieval_coco/checkpoint_best.pth'
+# finetune
+# pretrained: 'https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base.pth'
+pretrained: '/home/ubuntu/lxd-workplace/LYT/BLIP-Retrieval/pretrain-celeba/output/Pretrain/checkpoint_best.pth'
+# pretrained: ''
+
+# size of vit model; base or large
+
+vit: 'base'
+batch_size_train: 32
+batch_size_test: 32
+vit_grad_ckpt: True
+vit_ckpt_layer: 4
+
+# vit: 'large'
+# batch_size_train: 16
+# batch_size_test: 32
+# vit_grad_ckpt: True
+# vit_ckpt_layer: 12
+# init_lr: 5e-6
+
+image_size: 224
+queue_size: 57600
+alpha: 0.4
+k_test: 256
+negative_all_rank: True
+
+# optimizer
+weight_decay: 0.05
+init_lr: 1e-5
+min_lr: 0
+max_epoch: 20
+
