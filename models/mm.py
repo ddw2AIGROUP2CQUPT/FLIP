@@ -1,8 +1,3 @@
-"""
-@file mm.py
-@brief This file contains the code for the multimodal model. It is a modified version of the CLIP model from the huggingface transformers library.
-@author yutangli
-"""
 import torch
 from torch.nn import CrossEntropyLoss
 from transformers.configuration_utils import PretrainedConfig

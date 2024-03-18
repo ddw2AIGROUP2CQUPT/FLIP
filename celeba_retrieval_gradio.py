@@ -1,6 +1,3 @@
-"""
-@author yutangli
-"""
 import os
 import gradio as gr
 from gradio import components as gc

@@ -1,10 +1,3 @@
-"""
-@file fflip.py
-@brief This file contains the code for the multimodal model. It is a modified version of the CLIP model from the huggingface transformers library.
-@author yutangli
-"""
-
-
 import torch
 import torch.nn as nn
 from transformers.modeling_outputs import BaseModelOutputWithPooling
