@@ -1,6 +1,6 @@
 # FLIP (Facial Language Image Pretrain)
 
-This repository is the official implementation of [FaceCaption-15M]().
+**[24/07/05] 🤗FacaCaption-15M [OpenFace-CQUPT/FaceCaption-15M](https://huggingface.co/datasets/OpenFace-CQUPT/FaceCaption-15M)**
 
 Based on FaceCaption-15M, we trained a multimodal representation model (FLIP), similar in concept to CLIP, designed for aligning facial images with semantics. FLIP contains the following components: (1) Image Encoder: Composed of a visual transformer, this component processes the image. (2) Text Encoder: When handling text input alone, this encoder follows the standard BERT module and uses the [CLS] token to summarize the entire sentence. In the case of multimodal input, a cross-attention layer is introduced between the self-attention layer and the feedforward network of the text encoder to fuse visual information (Image-grounded Text Encoder). To adapt to specific tasks, an [ENC] token is added to the text input, serving as the multimodal representation for the image-text pair.  
 
