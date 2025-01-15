@@ -16,7 +16,7 @@
 
 **[24/07/06] update citation.**  
 
-**[24/07/05] FaceCaption-15M-V1 has been released!**  
+**[24/07/05] FaceCaption-15M-V1 has been released! [OpenFace-CQUPT/FaceCaption-15M](https://huggingface.co/datasets/OpenFace-CQUPT/FaceCaption-15M)**  
 FaceCaption-15M-V1 just contains the items of url, face box, laion_caption, face_caption and so on.  
 
 **Preview 1: HumanCaption-10M [Released!]**: We are about to release the V2 version(HumanCaption), which contains not only the face image description, but also short caption and detail caption for the original image respectively. Short caption is limited to 70 words for diffusion model training and fine-tuning, and detail caption is limited to 300 words for multi-modal large model training and fine-tuning.  
