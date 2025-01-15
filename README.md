@@ -64,7 +64,7 @@ Due to the special nature of the facial dataset itself, **this dataset is only a
 # 3. Contacts
 mailto: 2018211556@stu.cqupt.edu.cn or dw_dai@163.com
 
-# 4. Datasets Examples
+# 4. Dataset Examples
 **The green color is a sample of LAION and the red color is a sample of FaceCaption-15M.**
 ![image/png](https://cdn-uploads.huggingface.co/production/uploads/663f06e01cd68975883a353e/r9HKtA_ZCRtvIwKIZI4oC.png)
 
