@@ -15,8 +15,9 @@
 
 **The checkpoint has been released! [OpenFace-CQUPT/FLIP](https://huggingface.co/OpenFace-CQUPT/FLIP)**  
 
-**HumanCaption-10M [Released!] [HumanCaption-10M](https://huggingface.co/datasets/OpenFace-CQUPT/HumanCaption-10M)**: We are about to release the V2 version(HumanCaption), which contains not only the face image description, but also short caption and detail caption for the original image respectively. Short caption is limited to 70 words for diffusion model training and fine-tuning, and detail caption is limited to 300 words for multi-modal large model training and fine-tuning.  
-**HumanCaption-HQ [Released!] [HumanCaption-HQ-311K](https://huggingface.co/datasets/OpenFace-CQUPT/HumanCaption-HQ-311K)**: We extracted about 5M high-resolution image samples based on the V2 version, fusing the face detail description and the image description of GPT4o. The caption is limited to 500 words, applicable to the supervised fine-tuning stage.  
+# New works!!!
+**HumanCaption-10M [HumanCaption-10M](https://huggingface.co/datasets/OpenFace-CQUPT/HumanCaption-10M)**: We are about to release the V2 version(HumanCaption), which contains not only the face image description, but also short caption and detail caption for the original image respectively. Short caption is limited to 70 words for diffusion model training and fine-tuning, and detail caption is limited to 300 words for multi-modal large model training and fine-tuning.  
+**HumanCaption-HQ [HumanCaption-HQ-311K](https://huggingface.co/datasets/OpenFace-CQUPT/HumanCaption-HQ-311K)**: We extracted about 5M high-resolution image samples based on the V2 version, fusing the face detail description and the image description of GPT4o. The caption is limited to 500 words, applicable to the supervised fine-tuning stage.  
 Paper, Code and futher dataset coming soon, please stay tuned!
 
 # Facial language image pretraining (FLIP) model
