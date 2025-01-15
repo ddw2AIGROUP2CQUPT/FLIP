@@ -10,7 +10,7 @@ This repository is the official implementation of [FaceCaption-15M]().
 
 ## Training
 
-Coming soon......（Only for the datasets been published, the code of training is meaningful.）
+
 
 ```shell
 python pretrain.py > log.log
