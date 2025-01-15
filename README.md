@@ -1,18 +1,3 @@
----
-license: cc-by-4.0
-language:
-- en
-size_categories:
-- 10M<n<100M
-task_categories:
-- image-to-text
-- text-to-image
-tags:
-- computer vision
-- face
-- datasets
----
-
 # FacaCaption-15M
 
 ![](https://camo.githubusercontent.com/9f19143c491fa808f3867162e3fb5fb22f7a935a5bc564e1dcadb0cf82420f39/68747470733a2f2f696d672e797574616e676c692e6e65742f696d672f3230323430333138313030363938312e706e67)
