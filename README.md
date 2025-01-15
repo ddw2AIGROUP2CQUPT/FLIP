@@ -8,32 +8,16 @@
 
 # News and Updates 🔥🔥🔥：
 **[25/01/01] 🎉🎉🎉 Happy New Year! 🎉🎉🎉 We’re excited to announce that we’ve just updated a new dataset! You can download the updated dataset through the URL containing "imgv1.face-caption.com".
-**[24/09/16] 🤗[HumanCaption-10M](https://huggingface.co/datasets/OpenFace-CQUPT/HumanCaption-10M), is released!👏👏👏**
- 
-**[24/09/01] The embeddings of images in FaceCaption-15M has been released! [OpenFace-CQUPT/Facecaption-15M-Embeddings](https://huggingface.co/datasets/OpenFace-CQUPT/Facecaption-15M-Embeddings)**
 
-**[24/07/17] The checkpoint has been released! [OpenFace-CQUPT/FLIP](https://huggingface.co/OpenFace-CQUPT/FLIP)**
+**FaceCaption-15M has been released! [OpenFace-CQUPT/FaceCaption-15M](https://huggingface.co/datasets/OpenFace-CQUPT/FaceCaption-15M)**
 
-**[24/07/06] update citation.**  
+**The embeddings of images in FaceCaption-15M has been released! [OpenFace-CQUPT/Facecaption-15M-Embeddings](https://huggingface.co/datasets/OpenFace-CQUPT/Facecaption-15M-Embeddings)**
 
-**[24/07/05] FaceCaption-15M-V1 has been released! [OpenFace-CQUPT/FaceCaption-15M](https://huggingface.co/datasets/OpenFace-CQUPT/FaceCaption-15M)**  
-FaceCaption-15M-V1 just contains the items of url, face box, laion_caption, face_caption and so on.  
+**The checkpoint has been released! [OpenFace-CQUPT/FLIP](https://huggingface.co/OpenFace-CQUPT/FLIP)**  
 
-**Preview 1: HumanCaption-10M [Released!]**: We are about to release the V2 version(HumanCaption), which contains not only the face image description, but also short caption and detail caption for the original image respectively. Short caption is limited to 70 words for diffusion model training and fine-tuning, and detail caption is limited to 300 words for multi-modal large model training and fine-tuning.  
-![image/png](https://cdn-uploads.huggingface.co/production/uploads/64259db7d3e6fdf87e4792d0/r-EveWy-R7akMI6QvpXrH.png)
-**Preview 2: HumanCaption-HQ**: We extracted about 5M high-resolution image samples based on the V2 version, fusing the face detail description and the image description of GPT4o. The caption is limited to 500 words, applicable to the supervised fine-tuning stage.  
+**HumanCaption-10M [Released!] [HumanCaption-10M](https://huggingface.co/datasets/OpenFace-CQUPT/HumanCaption-10M)**: We are about to release the V2 version(HumanCaption), which contains not only the face image description, but also short caption and detail caption for the original image respectively. Short caption is limited to 70 words for diffusion model training and fine-tuning, and detail caption is limited to 300 words for multi-modal large model training and fine-tuning.  
+**HumanCaption-HQ [Released!] [HumanCaption-HQ-311K](https://huggingface.co/datasets/OpenFace-CQUPT/HumanCaption-HQ-311K)**: We extracted about 5M high-resolution image samples based on the V2 version, fusing the face detail description and the image description of GPT4o. The caption is limited to 500 words, applicable to the supervised fine-tuning stage.  
 Paper, Code and futher dataset coming soon, please stay tuned!
-
-# How to use:
-```python
-# when you use Datasets library:
-from datasets import load_dataset
-ds = load_dataset("OpenFace-CQUPT/FaceCaption-15M")
-
-# when you use pandas library:
-import pandas as pd
-df = pd.read_parquet("hf://datasets/OpenFace-CQUPT/FaceCaption-15M/FaceCaption-v1.parquet")
-```
 
 # Facial language image pretraining (FLIP) model
 Based on FaceCaption-15M, we trained a multimodal representation model (FLIP), similar in concept to CLIP, designed for aligning facial images with semantics. FLIP contains the following components: (1) Image Encoder: Composed of a visual transformer, this component processes the image. (2) Text Encoder: When handling text input alone, this encoder follows the standard BERT module and uses the [CLS] token to summarize the entire sentence. In the case of multimodal input, a cross-attention layer is introduced between the self-attention layer and the feedforward network of the text encoder to fuse visual information (Image-grounded Text Encoder). To adapt to specific tasks, an [ENC] token is added to the text input, serving as the multimodal representation for the image-text pair.  
