@@ -1,26 +1,5 @@
-# FacaCaption-15M
-
-![](https://camo.githubusercontent.com/9f19143c491fa808f3867162e3fb5fb22f7a935a5bc564e1dcadb0cf82420f39/68747470733a2f2f696d672e797574616e676c692e6e65742f696d672f3230323430333138313030363938312e706e67)
-![image/png](https://cdn-uploads.huggingface.co/production/uploads/64259db7d3e6fdf87e4792d0/ZG8-YO8kNbzl9JQUFTwu9.png)
-**FaceCaption-15M, a large-scale, diverse, and high-quality dataset of facial images accompanied by their natural language descriptions (facial image-to-text). This dataset aims to facilitate a study on face-centered tasks. FaceCaption-15M comprises over 15 million pairs of facial images and their corresponding natural language descriptions of facial features, making it the largest facial image caption dataset to date.**  
-
-
-
-# News and Updates 🔥🔥🔥：
-**[25/01/01] 🎉🎉🎉 Happy New Year! 🎉🎉🎉 We’re excited to announce that we’ve just updated a new dataset! You can download the updated dataset through the URL containing "imgv1.face-caption.com".
-
-**FaceCaption-15M has been released! [OpenFace-CQUPT/FaceCaption-15M](https://huggingface.co/datasets/OpenFace-CQUPT/FaceCaption-15M)**
-
-**The embeddings of images in FaceCaption-15M has been released! [OpenFace-CQUPT/Facecaption-15M-Embeddings](https://huggingface.co/datasets/OpenFace-CQUPT/Facecaption-15M-Embeddings)**
-
-**The checkpoint has been released! [OpenFace-CQUPT/FLIP](https://huggingface.co/OpenFace-CQUPT/FLIP)**  
-
-# New works!!!
-**HumanCaption-10M [HumanCaption-10M](https://huggingface.co/datasets/OpenFace-CQUPT/HumanCaption-10M)**: We are about to release the V2 version(HumanCaption), which contains not only the face image description, but also short caption and detail caption for the original image respectively. Short caption is limited to 70 words for diffusion model training and fine-tuning, and detail caption is limited to 300 words for multi-modal large model training and fine-tuning.  
-**HumanCaption-HQ [HumanCaption-HQ-311K](https://huggingface.co/datasets/OpenFace-CQUPT/HumanCaption-HQ-311K)**: We extracted about 5M high-resolution image samples based on the V2 version, fusing the face detail description and the image description of GPT4o. The caption is limited to 500 words, applicable to the supervised fine-tuning stage.  
-Paper, Code and futher dataset coming soon, please stay tuned!
-
-# Facial language image pretraining (FLIP) model
+# FLIP
+Facial language image pretraining (FLIP) model
 Based on FaceCaption-15M, we trained a multimodal representation model (FLIP), similar in concept to CLIP, designed for aligning facial images with semantics. FLIP contains the following components: (1) Image Encoder: Composed of a visual transformer, this component processes the image. (2) Text Encoder: When handling text input alone, this encoder follows the standard BERT module and uses the [CLS] token to summarize the entire sentence. In the case of multimodal input, a cross-attention layer is introduced between the self-attention layer and the feedforward network of the text encoder to fuse visual information (Image-grounded Text Encoder). To adapt to specific tasks, an [ENC] token is added to the text input, serving as the multimodal representation for the image-text pair.  
 
 The complete training code and pre-trained model weights：(https://huggingface.co/OpenFace-CQUPT/Facial-language-image-pretraining-model/)
